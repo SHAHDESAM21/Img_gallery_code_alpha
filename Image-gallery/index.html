@@ -1,0 +1,137 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    <body >
+        <section id="home">
+        <div class="overly-bg">
+            
+        <div >
+        <div class="d-flex flex-column justify-content-center align-items-center text-light" style="padding-top:15%;">
+            <h1 >IMAGE GALLERY</h1>
+            <h6>Let's have Fun</h6>
+        </div>
+        <div class="d-flex flex-row mx-3 inter" id="inter">
+          <i class="fa-solid fa-list" onclick="openlist()"></i> 
+           <h4 class="text-light fs-3">open</h4>
+        </div>
+    </div>
+        <div id="list" class="list  d-flex flex-column list-unstyled" style="width: 250px;">
+            <a class="X-ICO" onclick="closelist()">X</a>
+            <a href="#home" >Home</a>
+            <a href="#photoSection">photos</a>
+            <a href="#duration">Duration</a>
+            <a href="#contact">Contact</a>
+        </div>
+        </div>
+        </section>
+<!-------------section1------------>
+<div id="photoSection">
+    <nav class="navbar navbar-expand-lg " id="nave">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">WELCOME TO My IMAGE GALLERY</a>
+
+            </div>
+    </nav>
+
+    <div>
+        <div class="w-75 m-auto  py-5">
+            <div class="row" id="container">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="parentLayer  d-none justify-content-center align-items-center w-100 h-100 position-fixed top-0 start-0">
+
+        <div class="childLayer px-2 position-relative d-flex align-items-center justify-content-between w-50 h-75">
+
+                <i class="fa fa-arrow-circle-left" style="font-size:36px"></i>
+                <i class="fa fa-arrow-circle-right" style="font-size:36px"></i>
+                <i class="fa fa-times position-absolute " style="font-size:24px"></i>
+        </div>
+</div>
+</div>
+<!-------------section2------------>
+<div class="sec3" id="duration">
+    <div class="overlay">
+        <div class="contant text-center d-flex flex-row justify-content-evenly">
+            <div class="col-xs-3">
+                <div id="days" class="time"><h3>70 D</h3></div>
+            </div>
+
+            <div class="col-xs-3">
+                <div id="hours" class="time"><h3>02 h</h3></div>
+            </div>
+            <div class="col-xs-3">
+                <div id="minutes" class="time"><h3>56 m</h3></div>
+            </div>
+
+            <div class="col-xs-3">
+                <div id="seconds" class="time"><h3>08 s</h3></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------section3------------>
+<div class="sec4" id="contact">
+<div class="container px-5">
+    <div class="row">
+        <div class="col-md-5 desc">
+            <div><h2 class="text-dark fw-bolder">JOIN US</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></div>
+            <div ><h4 class="text-dark">CONTACT INFO</h4> <p class=" text-center">
+                Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p></div>
+            <div>
+                <ul class=" p-4 mx-3">
+                <li class="d-flex flex-row">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <p> New Street 22545, Nexa Road, New York City, USA</p>
+                </li>
+                <li class="d-flex flex-row px-5 py-2">
+            <i class="fa-regular fa-envelope "></i>
+            <a class="text-danger" href="mailto: shahdesam21e@gmail.com"> shahdesam21e@gmail.com</a>
+                </li>
+                <li class="d-flex flex-row px-5 py-2">
+            <i class="fa-solid fa-phone"></i>
+            <p>  001-000-000-000</p>
+                </li>
+                </ul>
+            </div>
+            <div class="social-icon">
+                <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/profile.php?id=100017723290479&mibextid=LQQJ4d" target="_blank"></a>
+                <a class="fa-brands fa-twitter" href="https://www.linkedin.com/in/shahd-essam-020393325?" target="_blank"></a>
+                <a class="fa-brands fa-google-plus-g" href="mailto: shahdesam21e@gmail.com"></a>
+                <a class="fa-brands fa-github" href="https://github.com/SHAHDESAM21" target="_blank"></a>
+
+
+            </div>
+        </div>
+
+        <div class="col-md-6 form d-flex flex-column  p-5 ">
+            <label  >
+                <input type="text" class="form-control py-3 mb-2 h-75 fw-semibold" placeholder="Enter Name">
+            </label>
+            <label >
+                <input type="text" class="form-control py-3 mb-2 h-75 fw-semibold" placeholder="Enter Email" cols="80">
+            </label>
+            <label >
+            <textarea name="Enter Message" id="" cols="65" rows="8" placeholder="Enter Message " class="p-3 fw-semibold"></textarea>
+            </label>
+
+            <div class="py-3 fw-semibold "><span class="text-danger" id="counter">100 </span>Characyer Reamining</div>
+            <input type="button" class="bg-danger border-0 w-25 p-2 text-light fw-semibold" value="SEND MESSAGE">
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>  
+<script src="js/mine.js"></script>
+    </body>
+</html>
